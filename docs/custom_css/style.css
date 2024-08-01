@@ -83,10 +83,6 @@
   padding: 5px;
 }
 
-.cert-row:nth-child(even){
-  
-}
-
 /* .project-card .card-body{
   display: flex !important;
   flex-direction: column !important;
