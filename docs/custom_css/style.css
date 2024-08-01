@@ -98,23 +98,35 @@
 footer{
   background-color: var(--gray);
 }
+
 @media(max-width:576px){
   #home,#about,#certificate, #project, #contact{
     min-height: 100vh;
     padding-left: 10px;
     padding-right: 10px;
   }
-    .hero-row{
-        margin-top: 50px;
-    }
-    .hero-row h1{
-        font-size: 28px !important;
-    }
-    .hero-row  .subhead-text{
-        font-size:24px !important;
-    }
-  .img-container{
-    width: 350px;
-    height: 350px;
+
+  #home h1{
+    font-size: 24px;
   }
+  .hero-row{
+      margin-top: 50px;
+  }
+  #left-section{
+    order: 2;
+  }
+  #right-section{
+    order: 1;
+  }
+
+  #left-section .heading{
+      font-size: 28px !important;
+  }
+  .hero-row  .subhead-text{
+      font-size:24px !important;
+  }
+.img-container{
+  width: 350px;
+  height: 350px;
+}
 }
