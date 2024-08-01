@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --black:#333333;
+    --white-bg:#F5F5F5;
+    --gray:#E0E0E0;
+    --IG-color:linear-gradient(90deg, #833ab4, #e1306c, #fd1d1d, #fcb045);
+    --html-color: 	#FFA500;
+    --css-color:#2965f1;
+    --js-color:#e2cf52;
+    --bootstrap-color: #712cf9;
+ }
+
+*{
+    margin: 0;
+    pad: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.logo-container{
+  width: 32px;
+  height: 32px;
+}
+
+/* Home Styles */
+#home{
+    min-height: 100vh;
+}
+.hero-row{
+    margin-top: 200px;
+}
+.img-container {
+    width: 400px;
+    height: 400px;
+    background-color:var(--gray);
+
+    border: none;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+  }
+  .img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /*About Styles */
+  #about{
+    min-height: 75vh;
+    padding-bottom: 50px;
+    background-color: var(--gray);
+  }
+  .img-about-container{
+    width: 100%;
+    background-color:white;
+  }
+  .about-pic{
+    width: 100%;
+    height: 100%;
+  }
+
+/* Project Styles */
+#project{
+    min-height: 75vh;
+    padding-bottom: 50px;
+}
+
+/* Certificate Styles */
+#certificate{
+  min-height: 100vh;
+  background-color: var(--gray);
+  padding-bottom: 50px;
+}
+
+.cert-row{
+  padding: 5px;
+}
+
+.cert-row:nth-child(even){
+  
+}
+
+/* .project-card .card-body{
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+} */
+
+#btn-back-to-top{
+  position: fixed;
+  right: 2%;
+  bottom: 5.5rem;
+}
+
+footer{
+  background-color: var(--gray);
+}
+@media(max-width:576px){
+  #home{
+    min-height: 75vh;
+  }
+    .hero-row{
+        margin-top: 50px;
+    }
+    .hero-row h1{
+        font-size: 28px !important;
+    }
+    .hero-row  .subhead-text{
+        font-size:24px !important;
+    }
+}
